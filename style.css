@@ -41,21 +41,28 @@ body {
 }
 
 /* Membership Section */
+
+/*  Lifetime and Donor Memberships */
 .membership-section-container {
-  padding: 6rem 0;
+  padding: 5rem 2rem 5rem;
+}
+.membership-info-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 85vh;
+  height: 920px;
+  overflow: hidden;
 }
 
 .membership-content,
 .donation-img {
   flex: 1;
-  height: 85vh;
+  height: 750px;
+  overflow: hidden;
 }
 
 .membership-content {
+  width: 800px;
   padding: 3rem 3.5rem;
   border-radius: 15px 0 0 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -80,7 +87,8 @@ body {
 .membership-content .contact-info {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
+  gap: 1rem;
   padding: 1rem 3rem 3rem 0;
 }
 
@@ -91,6 +99,12 @@ body {
 
 .contact-info p {
   font-size: 15px;
+}
+
+.address,
+.email,
+.phone {
+  flex: 1;
 }
 
 .membership-content form input[type='text'],
@@ -154,9 +168,10 @@ body {
 
 .donation-img img {
   max-width: 100%;
-  width: 700px;
-  height: 100%;
+  width: 800px;
+  height: 750px;
   object-fit: cover;
+  border: 0;
   border-radius: 0 15px 15px 0;
   cursor: pointer;
   transition: 0.3s ease;
@@ -164,4 +179,31 @@ body {
 
 .donation-img:hover img {
   transform: scale(1.005);
+}
+
+.membership-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.membership-text h2 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 54px;
+  color: #121212;
+}
+
+.membership-text p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #707070;
+  padding: 1.3rem 0 3.5rem;
+  width: 60%;
+  margin-inline: auto;
 }
